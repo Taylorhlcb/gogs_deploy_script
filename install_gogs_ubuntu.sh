@@ -49,7 +49,7 @@ echo "GRANT ALL PRIVILEGES ON gogs.* TO 'gogs'@'localhost';" >>/home/git/gogs/sc
 
 echo "--------------------"
 apt-get install -y wget mysql-client mysql-server
-mysql --user="$MYSQL_ROOT" --password="$MYSQL_PASS" < /home/git/gogs/scripts/mysql.sql
+mysql --user="root" --password="$MYSQL_PASS" < /home/git/gogs/scripts/mysql.sql
 
 chmod +x /home/git/gogs/gogs
 mkdir -p /home/git/gogs/log
